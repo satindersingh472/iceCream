@@ -36,6 +36,7 @@ h1,h3{
     display: grid;
     background-color: lightgrey;
     text-align: center;
+    width:100%;
 }
 #heading{
     align-self: end;
@@ -43,19 +44,18 @@ h1,h3{
 #all_creams{
     align-self: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
-    margin: 40px;
     box-sizing: border-box;
 }
 .one_cream{
     background-color: whitesmoke;
-    padding: 40px;
+    padding: 10px;
     border-radius: 5px;
     img{
-        height: 250px;
-        width: 250px;
-        border-radius: 50%;
+        height: 300px;
+        width:50%;
+        border-radius: 100%;
+        object-fit: cover;
     }
     button{
         background-color: white;
@@ -75,4 +75,20 @@ footer{
     min-height: 25vh;
     align-items: center;
     color: whitesmoke;
+}
+@media only screen and (min-width:600px){
+    #all_creams{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 90%;
+    }
+    .one_cream{
+        gap: 10px;
+        img{
+            height: 250px;
+            width: 100%;
+            text-align: center;
+            margin: auto;
+        }
+    }
 }
