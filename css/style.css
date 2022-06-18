@@ -3,6 +3,7 @@ body {
   margin: 0px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   max-width: 1080px;
+  margin: auto;
 }
 
 img {
@@ -49,7 +50,6 @@ h1, h3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
-  width: 70%;
   margin: 40px;
   box-sizing: border-box;
 }
