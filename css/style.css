@@ -1,0 +1,57 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+img {
+  height: 200px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  width: 70vw;
+}
+#navbar #logo img, #navbar #menu img {
+  height: 75px;
+  width: 75px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 20px;
+}
+#navbar #menu {
+  justify-self: end;
+}
+
+#main {
+  place-items: center;
+  display: grid;
+  background-color: lightgrey;
+  text-align: center;
+  height: 80vh;
+}
+
+#heading {
+  align-self: end;
+}
+
+#all_creams {
+  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  width: 70%;
+}
+
+.one_cream {
+  background-color: white;
+}
+.one_cream img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}/*# sourceMappingURL=style.css.map */
