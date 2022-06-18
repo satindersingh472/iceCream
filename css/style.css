@@ -1,6 +1,7 @@
 body {
   padding: 0px;
   margin: 0px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 img {
@@ -8,6 +9,10 @@ img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+h1, h3 {
+  color: red;
 }
 
 #navbar {
@@ -32,7 +37,6 @@ img {
   display: grid;
   background-color: lightgrey;
   text-align: center;
-  height: 80vh;
 }
 
 #heading {
@@ -45,13 +49,36 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
   width: 70%;
+  margin: 40px;
+  box-sizing: border-box;
 }
 
 .one_cream {
-  background-color: white;
+  background-color: whitesmoke;
+  padding: 40px;
+  border-radius: 5px;
 }
 .one_cream img {
-  height: 100px;
-  width: 100px;
-  border-radius: 50px;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+.one_cream button {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+.one_cream button:hover {
+  color: whitesmoke;
+  background-color: red;
+}
+
+footer {
+  display: grid;
+  background-color: grey;
+  text-align: center;
+  min-height: 25vh;
+  align-items: center;
+  color: whitesmoke;
 }/*# sourceMappingURL=style.css.map */

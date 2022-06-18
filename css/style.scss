@@ -1,11 +1,16 @@
+$heading-color:red;
 body{
     padding: 0px;
     margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 img{
     height: 200px;
     width: 100%;
     object-fit: cover;
+}
+h1,h3{
+    color:$heading-color;
 }
 #navbar{
     display: grid;
@@ -29,7 +34,6 @@ img{
     display: grid;
     background-color: lightgrey;
     text-align: center;
-    height: 80vh;
 }
 #heading{
     align-self: end;
@@ -40,12 +44,34 @@ img{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     width: 70%;
+    margin: 40px;
+    box-sizing: border-box;
 }
 .one_cream{
-    background-color: white;
+    background-color: whitesmoke;
+    padding: 40px;
+    border-radius: 5px;
     img{
-        height: 100px;
-        width: 100px;
-        border-radius: 50px;
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
     }
+    button{
+        background-color: white;
+        padding: 10px;
+        border: 1px solid $heading-color;
+        border-radius: 5px;
+        &:hover{
+            color: whitesmoke;
+            background-color: $heading-color;
+        }
+    }
+}
+footer{
+    display: grid;
+    background-color: grey;
+    text-align: center;
+    min-height: 25vh;
+    align-items: center;
+    color: whitesmoke;
 }
